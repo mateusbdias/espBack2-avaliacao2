@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          users-service-registration:
+            provider: users-service
+            client-id: users-service
+            client-secret: GqMFQmhE6JwEHa6WmNusLAJGHLx84urB
+            authorization-grant-type: client_credentials
+        provider:
+          users-service:
+            issuer-uri: http://localhost:8082/realms/digitalhouse
+server:
+  port: 8083
